@@ -1,0 +1,18 @@
+[package]
+name = "nibble4"
+version = "0.1.0"
+edition = "2021"
+description = "Block-wise 4-bit quantization library with explicit 16-entry code table, clipping and sparse residual compensation"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "nibble4"
+path = "src/lib.rs"
+
+# No third-party dependencies on purpose: everything runs on a plain Linux CPU
+# with the Rust standard library only.
+[dependencies]
+
+[[example]]
+name = "demo"
+path = "examples/demo.rs"
