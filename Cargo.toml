@@ -1,0 +1,17 @@
+[package]
+name = "qlp4"
+version = "0.1.0"
+edition = "2021"
+description = "Blocked 4-bit (explicit 16-code-table) quantization library with clipping residuals for dot products and matrix multiplication"
+license = "MIT"
+
+[lib]
+name = "qlp4"
+path = "src/lib.rs"
+
+# No third-party dependencies. The cap in the task is two; zero is even better.
+[dependencies]
+
+[[example]]
+name = "demo"
+path = "examples/demo.rs"
